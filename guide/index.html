@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>ACM Website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/site.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target=".sidenav">
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">ACM Website</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="index.html">Overview</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+        		  <li class="dropdown-header">Front-End</li>
+                  <li><a href="component_front_interface.html">Interface &amp; Design</a></li>
+                  <li><a href="component_front_javascript.html">Database JavaScript</a></li>
+
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Back-End</li>
+                  <li><a href="component_back_database_upload.html">Database Upload Form</a></li>
+                  <li><a href="component_back_database_deliver.html">Deliver Database to Front-End</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </div>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="col-md-9">
+        <h1 class="page-header main">Overview</h1>
+        <p class="lead">Website for Illinois Wesleyan's chapter of ACM.</p>
+        
+        <h1 id="development">Development Environment</h1>
+        <p>We will be using <a href="https://github.com" target="_blank">GitHub</a> to host the repository for our project. GitHub is a Git repository hosting service that many open source projects use, and Git is a popular <a href="https://en.wikipedia.org/wiki/Revision_control" target="_blank">Version Control</a> program. Follow this <a href="https://help.github.com/articles/set-up-git" target="_blank">installation guide</a> to setup Git (I recommend you do not install the "native app" but download Git instead). Then, we
+        will go over together how to use Git when working on this project. Our repository can be found on GitHub at <a href="https://github.com/acm-iwu/website" target="_blank">acm-iwu/website</a>.</p>
+        <p>Here are some resources on how Git works if you would like to learn more about it:</p>
+        <ul>
+            <li><a href="http://try.github.io/levels/1/challenges/1" target="_blank">Code School - Try Git</a> &ndash; This is an interactive Git tutorial. I highly recommend trying this out if you've never used Git before.</li>
+            <li><a href="http://rogerdudler.github.io/git-guide/" target="_blank">git - the simple guide</a></li>
+        </ul>
+
+        <h1 id="style">Style Guide</h1>
+        <p>When working on a project with a bunch of people, it's a good idea to construct some sort of style guide. The style guide for this project won't be too complicated, but follow these requirements:</p>
+        <ul>
+            <li>Use two spaces for indentation. Don't use tabs.</li>
+            <li>In general, put elements on their own line and indent them. Inline elements (e.g., span) don't need to be on their own line.</li>
+        </ul>
+
+        <h1 id="approach">Approach</h1>
+        <!-- TODO(alanrussian): Finish approach section. -->
+        <p></p>
+        
+        <h1 id="implementation">Implementation Overview</h1>
+        <h2 id="implementation-layout-design">Layout/Design</h2>
+        <p>This component of the project doesn't require any web development skills and is more focused on web design. You will still get some light exposure to web development, though.</p>
+        <p>Refer to the <a href="component_layout_design.html">layout/design guide</a>.</p>
+
+        <h2 id="implementation-template">Template Team</h2>
+        <p>The template team will be responsible for setting up the Bootstrap template. This will require the most web development skills.</p>
+        <p>Refer to the <a href="component_template.html">template guide</a>.</p>
+
+        <h2 id="implementation-pages">Pages</h2>
+        <p>Every page of the website will be assigned to a team. These will be of moderate difficulty with some pages being easier than others.</p>
+        <p>Refer to the <a href="component_pages.html">pages guide</a>.</p>
+    </div>
+    
+    <div class="col-md-3">
+        <div data-spy="affix" data-offset-top="70" class="sidenav">
+            <ul class="nav">
+                <li><a href="#development">Development Environment</a></li>
+                <li><a href="#style">Style Guide</a></li>
+                <li><a href="#approach">Approach</a></li>
+
+                <li>
+                    <a href="#implementation">Implementation Overview</a>
+
+                    <ul class="nav">
+                        <li><a href="#implementation-layout-design">Layout/Design</a></li>
+                        <li><a href="#implementation-template">Template</a></li>
+                        <li><a href="#implementation-pages">Pages</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    </div> <!-- /container -->
+
+    <div class="footer">
+        <div class="container">
+            <p class="text-muted">This guide was created by <a href="http://alanrussian.com" target="_blank">Alan Russian</a> for <a href="http://sun.iwu.edu/~acm" target="_blank">Illinois Wesleyan University's chapter of ACM</a></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
