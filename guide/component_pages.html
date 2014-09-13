@@ -56,59 +56,47 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="col-md-9">
-        <h1 class="page-header main">Overview</h1>
-        <p class="lead">Website for Illinois Wesleyan's chapter of ACM.</p>
+        <h1 class="page-header main">Pages Component</h1>
+        <p class="lead">This component deals with creating the HTML/CSS for the body of the pages in the site.</p>
         
-        <h1 id="development">Development Environment</h1>
-        <p>We will be using <a href="https://github.com" target="_blank">GitHub</a> to host the repository for our project. GitHub is a Git repository hosting service that many open source projects use, and Git is a popular <a href="https://en.wikipedia.org/wiki/Revision_control" target="_blank">Version Control</a> program. Follow this <a href="https://help.github.com/articles/set-up-git" target="_blank">installation guide</a> to setup Git (I recommend you do not install the "native app" but download Git instead). Then, we
-        will go over together how to use Git when working on this project. Our repository can be found on GitHub at <a href="https://github.com/acm-iwu/website" target="_blank">acm-iwu/website</a>.</p>
-        <p>Here are some resources on how Git works if you would like to learn more about it:</p>
+        <h1 id="requirements">Requirements</h1>
+        <p>You will take the wire-frames created by the <a href="component_layout_design.html">Layout/Design Component</a> team for the body of <a href="index.html#content">all the the site pages</a> and convert them into HTML/CSS code. Note that the <a href="component_template.html">Template Component</a> team will make the header and footer HTML/CSS.</p>
+        <p>To make it easy to update the header and footer across the site, it has been set up for you in a reusable way. All the pages in the site will load this reusable header and footer from the same header and footer files, these are the "header.php" and "footer.php" files in "/template/". The code for the page(s) you create will load these files, and this has already been set up for you.</p>
+        <p>The header and footer have been constructed such that if you had a page with just the header and footer, you would have a complete page of the website with no body content. For example, this could be a valid header and footer:</p>
+        <h4>Example header.php</h4>
+        <pre>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;ACM Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="content"&gt;</pre>
+        <h4>Example footer.php</h4>
+        <pre>  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+        <p>This means that you will only need to include elements from the body of the page on the page(s) that you create.</p>
+        <p>Finally, you will need to set up your page(s) using the Bootstrap CSS framework.</p>
+
+        <h1 id="tools">Tools</h1>
         <ul>
-            <li><a href="http://try.github.io/levels/1/challenges/1" target="_blank">Code School - Try Git</a> &ndash; This is an interactive Git tutorial. I highly recommend trying this out if you've never used Git before.</li>
-            <li><a href="http://rogerdudler.github.io/git-guide/" target="_blank">git - the simple guide</a></li>
+            <li><strong><a href="http://getbootstrap.com" target="_blank">Bootstrap</a>:</strong> Bootstrap is a <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS</a> framework that is commonly used to create web applications. It includes many CSS classes and JavaScript components that are used in web applications. It also uses <a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">responsive design</a>, so the design that you construct will adapt to phone, tablet, and desktop browsers.</li>
         </ul>
 
-        <h1 id="style">Style Guide</h1>
-        <p>When working on a project with a bunch of people, it's a good idea to construct some sort of style guide. The style guide for this project won't be too complicated, but follow these requirements:</p>
-        <ul>
-            <li>Use two spaces for indentation. Don't use tabs.</li>
-            <li>In general, put elements on their own line and indent them. Inline elements (e.g., span) don't need to be on their own line.</li>
-        </ul>
-
-        <h1 id="approach">Approach</h1>
-        <!-- TODO(alanrussian): Finish approach section. -->
-        <p></p>
-        
-        <h1 id="implementation">Implementation Overview</h1>
-        <h2 id="implementation-layout-design">Layout/Design</h2>
-        <p>This component of the project doesn't require any web development skills and is more focused on web design. You will still get some light exposure to web development, though.</p>
-        <p>Refer to the <a href="component_layout_design.html">layout/design guide</a>.</p>
-
-        <h2 id="implementation-template">Template</h2>
-        <p>The template team will be responsible for setting up the Bootstrap template. This will require the most web development skills.</p>
-        <p>Refer to the <a href="component_template.html">template guide</a>.</p>
-
-        <h2 id="implementation-pages">Pages</h2>
-        <p>Every page of the website will be assigned to a team. These will be of moderate difficulty with some pages being easier than others.</p>
-        <p>Refer to the <a href="component_pages.html">pages guide</a>.</p>
+        <h1 id="steps">Steps</h1>
+        <ol>
+            <li><strong>Start adding an outline of content to your page.</strong> While you wait on the <a href="component_layout_design.html">Layout/Design Component</a> team to create their wire-frames for your page, you can start just laying out the content without worrying too much about formatting onto your page. Notice that the page for your site was already created, so you just need to modify it.</li>
+            <li><strong>(Create additional components.)</strong> If you have a more advanced page, such as the homepage (with the join box) or the contact page (with the contact form), you can get started on these components now, if you'd like. You're using PHP due to the functionality available on our web server, so you can find a PHP contact form example such as <a href="http://www.w3schools.com/php/php_mail.asp" target="_blank">the tutorial on W3Schools</a>.</li>
+            <li><strong>Get familiar with Bootstrap.</strong> Bootstrap is a CSS framework commonly used for web application interfaces. CSS is a language that is used to define the style of a web page. Review the <a href="http://getbootstrap.com/getting-started/#examples" target="_blank">Bootstrap examples</a> provided on the <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> website and try to copy components from it when creating the content of your site. The <a href="component_layout_design.html">Layout/Design Component</a> team used these examples to create their wire-frames.</li>
+        </ol>
     </div>
     
     <div class="col-md-3">
         <div data-spy="affix" data-offset-top="70" class="sidenav">
             <ul class="nav">
-                <li><a href="#development">Development Environment</a></li>
-                <li><a href="#style">Style Guide</a></li>
-                <li><a href="#approach">Approach</a></li>
-
-                <li>
-                    <a href="#implementation">Implementation Overview</a>
-
-                    <ul class="nav">
-                        <li><a href="#implementation-layout-design">Layout/Design</a></li>
-                        <li><a href="#implementation-template">Template</a></li>
-                        <li><a href="#implementation-pages">Pages</a></li>
-                    </ul>
-                </li>
+                <li><a href="#requirements">Requirements</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#steps">Steps</a></li>
             </ul>
         </div>
     </div>
