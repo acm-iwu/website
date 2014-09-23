@@ -1,6 +1,3 @@
-
-
-
 <?php
   require_once 'common/pages.php';
 
@@ -28,20 +25,24 @@
     function Send() {
         var user = document.getElementById("user").value;
         var email = document.getElementById("email").value;
-        var atIndex = email.indexOf("@iwu.edu");
+        var subject = document.getElementById("subject").value;
+        var Message = document.getElementById("Message").value;
 
-        if (user == null || user == "") {
-            alert("Please enter name");
-        }else if(/[\u4E00-\u9FA5]/i.test(a)){
-            alert("Letter or number only");
-        } 
-        else if (user.length > 50) {
-            alert("Length is limited by 50");
+      if (user == "" && email == "" && subject == "" && Message == "" || user == null && email == null && subject == null && Message == null){
+            alert("Please fill in all the required fields!")
+        } else if (user == null || user == "") {
+            alert("Please enter your name!");
+        } else if (user.length > 25) {
+            alert("Please enter your real name!");
         } else if (email == null || email == "") {
-            alert("Please enter Email");
-        } else if (atIndex == -1) {
-            alert('Email address is invalid');
-        }else {
+            alert("Please enter your Email!");
+        }  else if (subject == null || subject == "") {
+            alert("Please enter a Subject!");
+        } else if (subject.length > 25) {
+            alert("Title is limited to 25 character!"); 
+        } else if (Message == null || Message == "") {
+            alert("Please enter a Message!");
+        } else {
             document.forms[0].submit();
         }
     }
@@ -61,14 +62,17 @@
 <form class="form-horizontal" role="form">
   <div class="form-group form-group-lg">
     <label class="col-sm-2 control-label" for="formGroupInputLarge" >Contact us</label>
+
+
+
     <div class="col-sm-10">
       <input class="form-control" type="text" id="user" name="user"  placeholder="Name">
     </div>
   </div>
   <div class="form-group form-group-lg">
-    <label class="col-sm-2 control-label" for="formGroupInputLarge">Address: acm@iwu.edu</label>
+    <label class="col-sm-2 control-label" for="formGroupInputLarge">Email Address: </br> (username@iwu.edu)</label>
     <div class="col-sm-10">
-      <input class="form-control" type="text" id="email" name="address" value=""  placeholder="Email">
+      <input class="form-control" type="text" id="email" name="email" value=""  placeholder="Email">
     </div>
   </div>
   <div class="form-group form-group-lg">
