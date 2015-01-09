@@ -16,21 +16,19 @@
  
  
  </br>
- <h1> Officer </h1>
+ <h1 style="margin-left:30px">Officer </h1>
  
- <div class="row">
-  <div class="col-md-3"><img src="pictures/alan.png" alt="Alan Russian - The President" class="img-circle">
+ <div style="margin-left:30px" class="row">
+  <div  class="col-md-3"><img src="pictures/alan.png" alt="Alan Russian - The President" class="img-circle">
   </br>
   <h4> Alan Russian </h4>
   <h4> President </h4>
   <h4> arussian@iwu.edu </h4>
   </div>
   
-  <div class="col-md-3"><img src="..." alt="..." class="img-circle"> </div>
+ 
   
-  <div class="col-md-3"><img src="..." alt="..." class="img-circle"> </div>
-  
-  <div class="col-md-3"><img src="pictures/jeremy.jpg" alt="Jeremy Albert - Chief of Staff" class="img-circle">
+  <div style="margin-left:550px" class="col-md-3"><img src="pictures/jeremy.jpg" alt="Jeremy Albert - Chief of Staff" class="img-circle">
   </br>
   <h4> Jeremy Albert
   <h4> Chief of Staff </h4>

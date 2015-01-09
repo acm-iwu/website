@@ -28,7 +28,7 @@
         } else if (Message == null || Message == "") {
             alert("Please enter a Message!");
         } else {
-            document.forms[0].submit();
+          document.getElementById('myform').submit();
         }
     }
     
@@ -41,7 +41,7 @@
 </script>
 
     
-<form class="form-horizontal" role="form">
+<form class="form-horizontal" role="form" id="myform" method="post" action="contact.php">
   <div class="form-group form-group-lg">
     <label class="col-sm-2 control-label" for="formGroupInputLarge" >Contact us</label>
 
@@ -71,12 +71,19 @@
   <div class="form-group form-group-lg" align=right>
    <label class="col-sm-2 control-label" for="formGroupInputLarge"></label>
    <div class="col-sm-10">
-      <button type="button" class="btn btn-primary" onclick="restart()">Reset</button>  
-      <button type="button" class="btn btn-primary" onclick="Send()">Send</button>
+      <button  type="button" class="btn btn-primary" onclick="restart()">Reset</button>  
+      <button style="margin-right:50px" type="button" class="btn btn-primary" onclick="Send()">Send</button>
    </div>   
    </div>                            
 
 </form>  
+    
+   <?php
+   	require("send.php");
+   ?>
+   
+   <script type="text/javascript" src="js/jquiry.js"></script>
+   
     
 </body>
 </html>
