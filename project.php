@@ -7,18 +7,18 @@ session_start();
   require 'template/header.php';
   
   
-  $query = "select * from `projectname` order by `id` desc";
+  $query = "select p.*,ph.link from `projectname` as p left join photo as ph on  ph.id=p.id order by p.id desc";
 		$result = mysql_query($query);
 		
 		if($result){
 			while($row = mysql_fetch_assoc($result)){
 					$id =  $row['id'];
 					$n =  $row['name'];
+					$link =  $row['link'];
 					$description = $row['des'];
 					$server =  $_SERVER['SCRIPT_NAME'];
-					echo "
-					
-						<div id='projects'>
+					echo "<div id='projects'>
+						   <img src='$link' width='75' height='75'  />
 							$n
 							<a id='enter_button' class='btn btn-default' href='projects.php?id=".$id."' role='button'>View details &raquo;</a>
 						</div>
