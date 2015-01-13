@@ -78,9 +78,9 @@ CREATE TABLE IF NOT EXISTS `photo` (
 --
 
 INSERT INTO `photo` (`no`, `id`, `link`) VALUES
-(8, 13, 'pictures/19573d3c392acbdfe803efdfe74b10581420794256.png'),
-(9, 14, 'pictures/3e0d455e499882d332f195ebfcfd4a9e1420825956.jpg'),
-(10, 15, 'pictures/7fea203ec115bbf422dbfcd2e3bedbf31420826133.png');
+(8, 13, 'pictures/1bc5b77f3e50b7fbe12c792ee438da451418306066.jpg'),
+(9, 14, 'pictures/070cf6787aa56fbdaa1b2fd98708c34c1418306066.jpg'),
+(10, 15, 'pictures/b44a59383b3123a747d139bd0e71d2df1418306066.jpg');
 
 -- --------------------------------------------------------
 
