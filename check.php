@@ -1,177 +1,39 @@
    <?php
-			$a =  $_SERVER['SCRIPT_NAME'];
-			if($a == "/ACM Website/index.php"){
-				echo " <li class='active'><a href='index.php'>Home</a></li>
-				 		<li><a href='about.php'>About</a></li>
-            			<li><a href='contact.php'>Contact</a></li>
-            			<li><a href='Events.php'>Events</a></li>
+			//$a =  $_SERVER['SCRIPT_NAME'];
+			//echo $a;
+			 $page=basename($_SERVER['PHP_SELF']); 
+                                           $a = array_shift(explode('.', $page));
+										  
+										   ?>
+                                           
+                         <li <?php if($a=='index' || $a=='') { ?> class='active' <?php } ?> ><a href='index.php'>Home</a></li>
+				 		<li <?php if($a=='about' ) { ?> class='active' <?php } ?> ><a href='about.php'>About</a></li>
+            			<li <?php if($a=='contact' ) { ?> class='active' <?php } ?> ><a href='contact.php'>Contact</a></li>
+            			<li <?php if($a=='events' ) { ?> class='active' <?php } ?>><a href='events.php'>Events</a></li>
 						
 						
-						
-						
-						
-						
-						
-						
+												
 						<li class='dropdown'>
-              <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Projects<b class='caret'></b></a>
-              <ul class='dropdown-menu'>
-               
-                <li><a href='project.php'>Projects</a></li>
-                ";
-                 
-					
-					if(isset($_SESSION['user'])){
-							echo"
-								<li><a href='reset.php'>Reset password</a></li>
-                <li><a href='logout.php'>Log out</a></li>";
-								
-						}		
-			"	
-           </ul>
-						
-						
-						
+                     <!--     <a href='project.php' class='dropdown-toggle' data-hover="dropdown" data-toggle='dropdown'>Projects<b class='caret'></b></a> -->
+                       <a href='project.php' class='dropdown-toggle' data-hover="dropdown"  data-delay="1000" data-close-others="false">Projects<b class='caret'></b></a>
+                        <ul class='dropdown-menu'>
+                          <?php  
+						    $query = "select * from `projectname` order by `id` desc";
+		                    $result = mysql_query($query);
+							while($data=mysql_fetch_array($result))
+							{
+						  ?>
+                             <li><a href='projects.php?id=<?php echo $data['id']; ?>'><?php echo $data['name'];?></a></li> 
+                             
+                           <?php  } ?>  
+                  </ul>
+              
+              <?php   if(isset($_SESSION['user'])){ ?>
+              
+                <li <?php if($a=='reset' ) { ?> class='active' <?php } ?>><a  href='reset.php'>Reset password</a></li>
+                <li><a href='logout.php'>Log out</a></li>
+                
+              <?php }?> 
+              
+                                            
 		
-				";
-			}else if($a == "/ACM Website/about.php"){
-					echo " <li ><a href='index.php'>Home</a></li>
-				 		<li class='active'><a href='about.php'>About</a></li>
-            			<li><a href='contact.php'>Contact</a></li>
-            			<li><a href='Events.php'>Events</a></li>
-						
-						
-						<li class='dropdown'>
-              <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Projects<b class='caret'></b></a>
-              <ul class='dropdown-menu'>
-               
-                <li><a href='project.php'>Projects</a></li>
-                ";
-                 
-					
-					if(isset($_SESSION['user'])){
-							echo"
-								<li><a href='reset.php'>Reset password</a></li>
-                <li><a href='logout.php'>Log out</a></li>";
-								
-						}		
-			"	
-           </ul>
-             			
-				";
-				}else if($a == "/ACM Website/contact.php"){
-						
-					echo " <li ><a href='index.php'>Home</a></li>
-				 		<li ><a href='about.php'>About</a></li>
-            			<li class='active' ><a href='contact.php'>Contact</a></li>
-            			<li><a href='Events.php'>Events</a></li>
-						
-						
-						<li class='dropdown'>
-              <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Projects<b class='caret'></b></a>
-              <ul class='dropdown-menu'>
-               
-                <li><a href='project.php'>Projects</a></li>
-                ";
-                 
-					
-					if(isset($_SESSION['user'])){
-							echo"
-								<li><a href='reset.php'>Reset password</a></li>
-                <li><a href='logout.php'>Log out</a></li>";
-								
-						}		
-			"	
-           </ul>
-						
-						
-				";
-					}else if($a == "/ACM Website/Events.php"){
-						echo " <li ><a href='index.php'>Home</a></li>
-				 		<li ><a href='about.php'>About</a></li>
-            			<li  ><a href='contact.php'>Contact</a></li>
-            			<li class='active'><a href='Events.php'>Events</a></li>
-						
-						
-						<li class='dropdown'>
-              <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Projects<b class='caret'></b></a>
-              <ul class='dropdown-menu'>
-               
-                <li><a href='project.php'>Projects</a></li>
-                ";
-                 
-					
-					if(isset($_SESSION['user'])){
-							echo"
-								<li><a href='reset.php'>Reset password</a></li>
-                <li><a href='logout.php'>Log out</a></li>";
-								
-						}		
-			"	
-           </ul>
-						
-					
-						
-				";
-				
-					}else if($a == "/ACM Website/project.php"){
-						echo " <li ><a href='index.php'>Home</a></li>
-				 		<li ><a href='about.php'>About</a></li>
-            			<li  ><a href='contact.php'>Contact</a></li>
-            			<li ><a href='Events.php'>Events</a></li>
-						
-						
-						<li  class='active' class='dropdown'>
-              <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Projects<b class='caret'></b></a>
-              <ul class='dropdown-menu'>
-               
-                <li ><a href='project.php'>Projects</a></li>
-                ";
-                 
-					
-					if(isset($_SESSION['user'])){
-							echo"
-								<li><a href='reset.php'>Reset password</a></li>
-                <li><a href='logout.php'>Log out</a></li>";
-								
-						}		
-			"	
-           </ul>
-						
-					
-						
-				";
-						
-						
-						}else{
-							
-							echo " <li ><a href='index.php'>Home</a></li>
-				 		<li ><a href='about.php'>About</a></li>
-            			<li  ><a href='contact.php'>Contact</a></li>
-            			<li ><a href='Events.php'>Events</a></li>
-						
-						<li  class='dropdown'>
-              <a href='#' class='dropdown-toggle' data-toggle='dropdown'>Projects<b class='caret'></b></a>
-              <ul class='dropdown-menu'>
-               
-                <li ><a href='project.php'>Projects</a></li>
-                ";
-                 
-					
-					if(isset($_SESSION['user'])){
-							echo"
-								<li><a href='reset.php'>Reset password</a></li>
-                <li><a href='logout.php'>Log out</a></li>";
-								
-						}		
-			"	
-           </ul>
-						
-					
-						
-				";
-							
-							}
-            	
-			?>
-           
