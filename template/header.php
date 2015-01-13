@@ -94,7 +94,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="index.php">Project name</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -110,15 +110,22 @@
 
     <!-- Carousel
     ================================================== -->
+    <?php 
+	 $page=basename($_SERVER['PHP_SELF']); 
+      $page = array_shift(explode('.', $page));
+		if($page=="index" || $page=="")
+		{								   
+	?>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
          <?php
+		 
       	 $query = "select * from `photo` order by `no` DESC limit 10 ";
 		$result = mysql_query($query);
 		
 		$r = mysql_num_rows($result);
-			if($r == 1){
+		/*	if($r == 1){
 					echo "
 						<li data-target='#projectCarousel' class='active' data-slide-to='0'></li>
 					";
@@ -126,82 +133,44 @@
 			}else if($r > 1){
 				echo "
 						<li data-target='#projectCarousel' class='active' 					  	data-slide-to='0'></li>
-					";
-					for($i=1;$i<$r; $i++){
-					echo "
-						<li data-target='#projectCarousel' data-slide-to='$i'></li>
-					";
-				}
-				}
-			
-		
-			?>
-      </ol>
+					"; */
+					for($i=0;$i<$r; $i++){
+					?>
+						<li data-target='#projectCarousel' data-slide-to='<?php echo $i; ?>' class="<?php if($i==0){ echo "active";} ?>"></li>
+					<?php
+				} 
+				?>
+	  </ol>
       <div class="carousel-inner">
          <?php
-      	 $query = "select * from `photo` order by `no` desc limit 10";
-		$result = mysql_query($query);
-		
-		$r = mysql_num_rows($result);
-		
-		$links = array();
-		
-		while($row = mysql_fetch_assoc($result)){
-				$links[] = $row['link'];
-			}
-			
-			if($r == 1){
-					echo "
-						<div class='item active'>
-          <img src='$links[0]'>
-		  <div class='container'>
-            <div class='carousel-caption'>
-              
-             
-             <p><a class='btn btn-lg btn-primary' id='join_today' href='#' onClick='join()'  role='button'>Join Today </a></p>
-            </div>
-          </div>
-             </div>
-					";
-				}
-				else if($r > 1){
-					
-					echo "
-						<div class='item active'>
-          <img src='$links[0]'>
-		  <div class='container'>
-            <div class='carousel-caption'>
-              
-              
-           
-            </div>
-          </div>
-             </div>
-					";
-					
-					foreach($links as $x){
-						echo "
-						<div class='item '>
-          <img src='$x'>
-		  <div class='container'>
-            <div class='carousel-caption'>
-              
-             
-            </div>
-          </div>
-             </div>
-					";					
-						}
-					
-					
+		 $c=0;
+        	while($row = mysql_fetch_array($result)){
+				$c++;
 			?>
-              <!--<p><a class='btn btn-lg btn-primary' id='join_today' href='#' onClick='join()'  role='button'>Join Today </a></p>
-            -->
+			<div class='item <?php if($c==1){ echo "active";} ?>'  >
+            
+          <img src='<?php echo $row[link] ?>'>
+          
+          
+		  <div class='container'>
+            <div class='carousel-caption'>
+              
+            
+          <!--   <p><a class='btn btn-lg btn-primary'  id='join_today' href='#' onClick='join()'  role='button'>Join Today </a></p>  -->
+            </div>
+          </div>
+             </div>
+			 
+		<?php 	} ?>
+			
+		
                   </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
   
+  
+ 
     <div id="join">
     <form method="post" action="<?php $_SERVER['SCRIPT_NAME'] ?>">
     	<input class="form-control" required type="text" name="name" placeholder="Enter your name"><br>
