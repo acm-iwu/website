@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.12
+-- version 3.2.0.1
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 09, 2014 at 05:41 PM
--- Server version: 5.6.16
--- PHP Version: 5.5.11
+-- Host: localhost
+-- Generation Time: Jan 13, 2015 at 12:29 PM
+-- Server version: 5.1.37
+-- PHP Version: 5.3.0
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -48,15 +47,18 @@ CREATE TABLE IF NOT EXISTS `join` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(30) NOT NULL,
   `email` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `join`
 --
 
-INSERT INTO `join` (`id`, `name`, `email`) VALUES
-(1, 'ihtesham', 'ihteshamhussain@rocketmail.com');
+INSERT INTO `join` (`id`, `name`, `email`, `password`) VALUES
+(1, 'jisan', 'jisanpolara@gmail.com', '123456'),
+(2, 'jisan', 't.u.chaudhari@gmail.com', '123'),
+(3, 'tejas', 't.u.chaudhari@gmail.com', '123');
 
 -- --------------------------------------------------------
 
@@ -69,7 +71,16 @@ CREATE TABLE IF NOT EXISTS `photo` (
   `id` int(11) NOT NULL,
   `link` varchar(300) NOT NULL,
   PRIMARY KEY (`no`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `photo`
+--
+
+INSERT INTO `photo` (`no`, `id`, `link`) VALUES
+(8, 13, 'pictures/19573d3c392acbdfe803efdfe74b10581420794256.png'),
+(9, 14, 'pictures/3e0d455e499882d332f195ebfcfd4a9e1420825956.jpg'),
+(10, 15, 'pictures/7fea203ec115bbf422dbfcd2e3bedbf31420826133.png');
 
 -- --------------------------------------------------------
 
@@ -82,7 +93,16 @@ CREATE TABLE IF NOT EXISTS `projectname` (
   `name` varchar(50) NOT NULL,
   `des` varchar(500) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+
+--
+-- Dumping data for table `projectname`
+--
+
+INSERT INTO `projectname` (`id`, `name`, `des`) VALUES
+(13, 'Test Project', 'This is a Test Project'),
+(14, 'Test Project 2', 'This is another Test Project'),
+(15, 'Project 3', 'This is another Test Project');
 
 -- --------------------------------------------------------
 
@@ -96,6 +116,11 @@ CREATE TABLE IF NOT EXISTS `worker` (
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`no`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `worker`
+--
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
