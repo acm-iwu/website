@@ -40,6 +40,8 @@
     }
 </script>
 
+<br>
+<br>
     
 <form class="form-horizontal" role="form" id="myform" method="post" action="contact.php">
   <div class="form-group form-group-lg">
