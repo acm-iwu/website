@@ -12,7 +12,7 @@
         var email = document.getElementById("email").value;
         var subject = document.getElementById("subject").value;
         var Message = document.getElementById("Message").value;
-
+    
         if (user == "" || email == "" || subject == "" || Message == "" )
 		{
 			var c=0;
@@ -33,37 +33,49 @@
 				c++;
 			}
 			
-			 if(c>1)
+			if(c>1)
 			{
 			 alert("Please fill in all the required fields!");
+			 return false;
 			}
         } 
 		 
-		else if (user == null || user == "") {
+		if (user == null || user == "") {
             alert("Please enter your name!");
-        } else if (user.length > 25) {
-            alert("Please enter your real name!");
-        } else if (email == null || email == "") {
-            alert("Please enter your Email!");
-        }
-			var x = document.forms["myform"]["email"].value;
-		var atpos = x.indexOf("@");
-		var dotpos = x.lastIndexOf(".");
-		if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-			alert("Not a valid e-mail address");
 			return false;
-		}
-			 
-	
-		 else if (subject == null || subject == "") {
-            alert("Please enter a Subject!");
-        } else if (subject.length > 25) {
-            alert("Title is limited to 25 character!"); 
-        } else if (Message == null || Message == "") {
-            alert("Please enter a Message!");
-        } else {
-          document.getElementById('myform').submit();
+        } 
+		if (user.length > 25) {
+            alert("Please enter your real name!");
+			return false;
         }
+		 if (email == null || email == "") {
+            alert("Please enter your Email!");
+			return false;
+        }
+		if(email!="")
+		{       //var x = document.forms["myform"]["email"].value;
+				var atpos = email.indexOf("@");
+				var dotpos = email.lastIndexOf(".");
+				if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+					alert("Not a valid e-mail address");
+					return false;
+				}
+		}
+	
+	 if (subject == null || subject == "") {
+            alert("Please enter a Subject!");
+			return false;
+        } 
+		 if (subject.length > 25) {
+            alert("Title is limited to 25 character!"); 
+			return false;
+        } 
+		if (Message == null || Message == "") {
+            alert("Please enter a Message!");
+			return false;
+        } 
+          document.getElementById('myform').submit();
+        
     }
     
     function restart() {
