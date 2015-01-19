@@ -33,10 +33,9 @@
 				c++;
 			}
 			
-			if(c>1)
+			 if(c>1)
 			{
-            
-			alert("Please fill in all the required fields!")
+			 alert("Please fill in all the required fields!");
 			}
         } 
 		 
@@ -46,16 +45,16 @@
             alert("Please enter your real name!");
         } else if (email == null || email == "") {
             alert("Please enter your Email!");
-        } else if(email != null || email != "")
-		var x = document.forms["myform"]["email"].value;
-    var atpos = x.indexOf("@");
-    var dotpos = x.lastIndexOf(".");
-    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-        alert("Not a valid e-mail address");
-        return false;
-    }
-		 
-		
+        }
+			var x = document.forms["myform"]["email"].value;
+		var atpos = x.indexOf("@");
+		var dotpos = x.lastIndexOf(".");
+		if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+			alert("Not a valid e-mail address");
+			return false;
+		}
+			 
+	
 		 else if (subject == null || subject == "") {
             alert("Please enter a Subject!");
         } else if (subject.length > 25) {
