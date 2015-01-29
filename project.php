@@ -6,21 +6,32 @@ session_start();
 
   require 'template/header.php';
   
-  
+  ?>
+ <div class="container">
+    <div class="row" style="margin-bottom: 20px; padding-bottom: 5px; border: none;">
+        <div class="col-md-12">
+        <h1>Projects</h1>
+        <p>A list of our current projects!</p>
+        </div>
+    </div>
+ 
+  <?php
   $query = "select p.*,ph.link from `projectname` as p left join photo as ph on  ph.id=p.id order by p.id desc";
 		$result = mysql_query($query);
 		
 		if($result){
 			while($row = mysql_fetch_assoc($result)){
+					
 					$id =  $row['id'];
 					$n =  $row['name'];
 					$link =  $row['link'];
 					$description = $row['des'];
 					$server =  $_SERVER['SCRIPT_NAME'];
-					echo "<div id='projects'>
-						   <img src='$link' width='75' height='75'  />
-							$n
-							<a id='enter_button' class='btn btn-default' href='projects.php?id=".$id."' role='button'>View details &raquo;</a>
+									
+					echo "<div class='project row'>
+        				  <div class='col-md-1'><center><img src=".$link." class='img-circle'></center></div>
+							 <div class='col-md-9'><h3> ".$n." </h3> <p> ".$description." </p> </div>
+							  <div class='col-md-2'><a style='width:100%;' type='button' class='btn btn-default' href='projects.php?id=".$id."' role='button'>View Project</a> </div>
 						</div>
 						
 					";
@@ -29,19 +40,7 @@ session_start();
 			}
 		
 ?>
-
-
-
-
-<style>
-	#admin{ width:800px; height:500px; margin:0px auto}
-	
-	#enter_button{ float:right; margin:3px 5px}
-	#projects{ width:800px; height:auto; margin:0px auto; background-color:#FFF; padding:20px; border: ridge 1px #CCCCCC; border-radius-top:10px}
-</style>
-
-
-
+</div>
 
 <?php
   require 'template/footer.php';
