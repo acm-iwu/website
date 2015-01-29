@@ -1,4 +1,4 @@
-<?php
+<?php  session_start();
   require_once 'common/pages.php';
 
   $page = PAGE_CONTACT;
@@ -6,6 +6,7 @@
   require 'template/header.php';
 ?>
 
+ 
 <script type="text/javascript">
     function Send() {
         var user = document.getElementById("user").value;
@@ -86,6 +87,12 @@
     }
 </script>
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Contact Us</h1>
+            <p>To contact us please complete this form and we will reply to the email provided.</p>
+            <br /><br />
     
 <form class="form-horizontal" role="form" id="myform" method="post" action="contact.php">
   <div class="form-group form-group-lg">
@@ -123,6 +130,11 @@
    </div>                            
 
 </form>  
+
+</div>
+    </div>
+</div>
+
     
    <?php
    	require("send.php");
