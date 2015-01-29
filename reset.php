@@ -9,6 +9,13 @@ session_start();
 	  die();
 	  }
 ?>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+
+<h1>Reset Password</h1>
+<p>To reset password please complete this form.</p>
+<div class="col-md-6">
 <form action="reset.php" method="post">
 	<input class="form-control" type="password" name="pass" placeholder="Enter your current password"><br>
     <input class="form-control" type="password" name="newpass" placeholder="Enter new password"><br>
@@ -16,7 +23,10 @@ session_start();
     <input class="btn btn-primary" type="submit" name="login" value="Login">
 	</center>
 </form>
-
+</div>
+</div>
+</div>
+</div>
 <?php
 require("db.php");
 	if(isset($_POST['newpass']) && isset($_POST['pass'])){
