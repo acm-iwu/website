@@ -7,8 +7,9 @@
 										   ?>
                                            
                          <li <?php if($a=='index' || $a=='') { ?> class='active' <?php } ?> ><a href='index.php'>Home</a></li>
-				 		<li <?php if($a=='about' ) { ?> class='active' <?php } ?> ><a href='about.php'>About</a></li>
-            			<li <?php if($a=='contact' ) { ?> class='active' <?php } ?> ><a href='contact.php'>Contact</a></li>
+				 	<?php /* ?>	<li <?php if($a=='about' ) { ?> class='active' <?php } ?> ><a href='about.php'>About</a></li> <?php */ ?>
+            			<li <?php if($a=='members' ) { ?> class='active' <?php } ?> ><a href='members.php'>Members</a></li>
+                        <li <?php if($a=='contact' ) { ?> class='active' <?php } ?> ><a href='contact.php'>Contact</a></li>
             			<li <?php if($a=='events' ) { ?> class='active' <?php } ?>><a href='events.php'>Events</a></li>
 						
 						
