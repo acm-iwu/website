@@ -6,13 +6,21 @@ session_start();
 
   require 'template/header.php';
 ?>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+        <h1>Admin</h1>
+        <p>Please enter your credentials to access the AdminCP.</p>
+        <br />
 <form action="adminlogin.php" method="post">
-	<input class="form-control" type="text" name="user" placeholder="Enter Username"><br>
-    <input class="form-control" type="password" name="pass" placeholder="Enter Username"><br>
-    <center>
-    <input class="btn btn-primary" type="submit" name="login" value="Login">
-	</center>
+	<input class="form-control" type="text" name="user" style="max-width: 300px;" placeholder="Enter Username"><br>
+    <input class="form-control" type="password" name="pass" style="max-width: 300px;" placeholder="Enter Username"><br>
+    <input class="btn btn-default" type="submit" name="login" value="Login">
 </form>
+
+ </div>
+ </div>
+</div>
 
 <?php
 require("db.php");
