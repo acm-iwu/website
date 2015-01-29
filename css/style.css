@@ -1,0 +1,61 @@
+body { background: #dce8e9; width: 100%; height: 100%; min-height: 100%; font-family: Arial; }
+
+.navbar { background: #7e9e9f; border-color: #6b8f90; border-radius: 0; }
+.navbar .navbar-brand { color: #111 !important; }
+.navbar .navbar-nav > li > a { color: #222; }
+.navbar .navbar-nav > .active > a { background: transparent; box-shadow: none; font-weight: bold; color: #111 !important; }
+.navbar .navbar-nav > .active > a:hover { background: transparent; }
+.navbar .navbar-nav > .open > a { background: transparent !important; box-shadow: none; font-weight: bold; color: #111 !important; }
+.footer { padding: 15px 0; border-top: 1px solid #ddd; }
+.footer .container { padding: 0; }
+.footer .copy { font-weight: bold; text-transform: uppercase; }
+
+h1 { padding-bottom: 10px; text-transform: uppercase; margin-bottom: 5px; }
+a { color: #65b8b2; }
+a:hover { color: #76c0bb }
+
+.btn-default { color: #fff; background: #76c0bb; border-color: #65b8b2; text-shadow: none; }
+.btn-default:hover { background: #65b8b2; border-color: #65b8b2; font-style: italic; color: #ddd; }
+
+.container { max-width: 1200px; }
+.row { border-bottom: 1px dotted #ddd; padding-bottom: 20px; margin-bottom: 30px; }
+.row:last-child { border-bottom: none; }
+
+.members { height: auto; max-height: 210px; overflow-y: auto; overflow-x: hidden; padding-right: 20px; }
+.member { margin-bottom: 0; border-bottom: none; }
+.member img { width: 50px; }
+.member h3 { margin: 0; }
+.member .glyphicon { margin-right: 3px; }
+.member .btn { margin-top: 10px; }
+.member:last-child { padding-bottom: 0; }
+
+#fixed-bar { position: fixed; left: 0; top: 51px; bottom: 0; background: rgba(33,33,33,0.5); width: 200px; color: #fff; text-align: center; padding: 0; }
+#fixed-bar h4 { margin: 20px 0; }
+
+.project { margin-bottom: 0; border-bottom: none; }
+.project h3 { margin: 0; }
+.project img { width: 60px; height: 50px; }
+.project:last-child { margin-bottom: 30px; }
+
+.admin { margin-bottom: 0; border-bottom: none; }
+.admin h3 { margin: 0; }
+.admin img { width: 50px; }
+.admin:last-child { margin-bottom: 30px; }
+.admin .btn { margin-left: 7px; }
+
+.officers { text-align: center; }
+
+@media( max-width: 995px ) {
+	#fixed-bar { position: relative; left: 0; top: 0; background: transparent; width: 100%; text-align: left; color: #000; }
+	#fixed-bar h2 { text-transform: uppercase; color: #000; font-size: 36px; }
+	#fixed-bar .glyphicon { display: none; }
+	#fixed-bar center { float: left; }
+	#fixed-bar .members { margin-bottom: 20px; }
+	#fixed-bar .members h5 { font-size: 20px; font-weight: bold; margin-left: 75px; }
+	.members { max-height: 100%; }
+	.row { margin-bottom: 10px; }
+	.row:last-child { margin-bottom: 30px; }
+	.col-md-1 { width: auto; float: left; }
+	.col-md-9 { width: auto; float: left; }
+
+}
