@@ -11,17 +11,30 @@ session_start();
 	  }
   
 ?>
-<div id="admin">
-<fieldset>
-	<legend>Project Name And Description</legend>
-    <form action="admin.php" method="post">
-    	<input class="form-control" type="text" name="name" placeholder="Enter the title of the project" /><br	>
-        <textarea class="form-control" rows="10" cols="90" name="des" placeholder="Enter the project description here"></textarea>
-        <input  id="enter_button" class="btn btn-primary" type="submit" name="submit" value="Save">
-    </form>
-</fieldset>
-</form>
+<div class="container">
+    <div class="row" style="margin-bottom: 20px; padding-bottom: 5px; border: none;">
+        <div class="col-md-12">
+        <h1>Add new project</h1>
+        <p>Use the below form to add a new project to the <a href="project.php">projects page</a>.</p>
+        <br />
+
+        <form action="admin.php" method="post">
+            <input class="form-control" type="text" name="name" style="max-width: 450px;" placeholder="Enter the title of the project" /><br	>
+            <textarea class="form-control" rows="5" cols="50" style="max-width: 450px;" name="des" placeholder="Enter the project description here"></textarea>
+             <br />
+            <input  id="enter_button" class="btn btn-default" type="submit" name="submit" value="Save">
+        	
+        </form>
+	 </div>
 </div>
+
+ <div class="row" style="margin-bottom: 20px; padding-bottom: 5px; border: none;">
+        <div class="col-md-12">
+        <h1>Projects</h1>
+        <p>The members of IWU ACM!</p>
+        </div>
+    </div>
+
 <?php
 require("db.php");
 	if(isset($_POST['name'])&&isset($_POST['des'])){
@@ -54,42 +67,37 @@ require("db.php");
 					$server =  $_SERVER['SCRIPT_NAME'];
 					echo "
 					
-						<div id='projects'>
-							$n<br>
-							<form action='addworker.php?id=".$id."' method='post'>
-							<input class='btn btn-primary' id='enter_button' type='submit' name='addWorker' value='Add Worker' >
-							</form>
-						<form action='addGallery.php?id=".$id."' method='post'>
-							<input type='submit' class='btn btn-primary' id='enter_button' name='Add Gallery' value='Add Gallery' >
-						</form>
-						<form action='delete.php?id=".$id."' method='post'>
-							<input id='enter_button' class='btn btn-primary' type='submit' name='delete' value='Delete' ><br>
-						</div>
-						</form>
+					 <div class='admin row'>
+        			   <div class='col-md-7'><h3> $n </h3> </p></div>
 						
+							<div class='col-md-4' style='text-align: right;'>
+								
+								<form action='delete.php?id=".$id."' method='post' style='float:left'>
+									<input id='enter_button' class='btn btn-default' type='submit' name='delete' value='Delete' >
+								</form>
+							
+								<form action='addGallery.php?id=".$id."' method='post' style='float:left'>
+									<input type='submit' class='btn btn-default' id='enter_button' name='Add Gallery' value='Add Gallery' >
+								</form>
+									
+								<form action='addworker.php?id=".$id."' method='post' style='float:left'>
+									<input class='btn btn-default' id='enter_button' type='submit' name='addWorker' value='Add Worker' >
+								</form>
+							
+							</div>
+						  </div>
+						 	
 					";
 				}
 
 			}
-			
-			
-			
-					
 				
-				
-		
 ?>
 
 
 
 
-<style>
-	#admin{ width:800px; height:500px; margin:0px auto}
-	
-	#enter_button{ float:right; margin:3px 5px}
-	#projects{ width:800px; height:auto; margin:0px auto; background-color:#FFF; padding:20px; border: ridge 1px #CCCCCC; border-radius-top:10px}
-</style>
-
+</div>
 <?php
   require 'template/footer.php';
 ?>
