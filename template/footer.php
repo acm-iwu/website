@@ -1,3 +1,10 @@
+
+<footer class="footer">
+    <div class="container">
+        <div class="copy col-md-6">Copyright &copy; Sitename 2015</div>
+        <div class="col-md-6" style="text-align: right">Designed by Chris Harmon</div>
+    </div>
+</footer>
     
     <!-- Bootstrap core JavaScript
     ================================================== -->
