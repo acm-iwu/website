@@ -23,9 +23,13 @@
     <title>IWU ACM</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="template/css/bootstrap.min.css" rel="stylesheet">
-    <link href="template/css/customacm.css" rel="stylesheet">
-   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+    <!-- <link href="template/css/customacm.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet">
+   <link href="css/carousel.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -43,47 +47,7 @@
 	<script type="text/javascript" src="../js/jquiry.js"></script>
     <script type="text/javascript" src="../js/js.js"></script>
   <body>
-    <!-- CAROUSEL HEADER
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Project name</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div> -->
-
-    <!-- Static navbar -->
+   
    
     <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
@@ -94,7 +58,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Project name</a>
+          <a class="navbar-brand" href="index.php">IWU ACM</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -117,6 +81,8 @@
 		{								   
 	?>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="container">
+    
       <!-- Indicators -->
       <ol class="carousel-indicators">
          <?php
@@ -136,7 +102,7 @@
 					"; */
 					for($i=0;$i<$r; $i++){
 					?>
-						<li data-target='#projectCarousel' data-slide-to='<?php echo $i; ?>' class="<?php if($i==0){ echo "active";} ?>"></li>
+						<li data-target='#myCarousel' data-slide-to='<?php echo $i; ?>' class="<?php if($i==0){ echo "active";} ?>"></li>
 					<?php
 				} 
 				?>
@@ -165,9 +131,11 @@
 			
 		
                   </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
+  <!--    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
+    </div>
+  </div>>  
+    <!-- /.carousel -->
   
   
  
@@ -224,5 +192,4 @@
 
 ?>
 
-    </body>
-    </html>
+ 
