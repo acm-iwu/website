@@ -36,19 +36,20 @@ session_start();
     <div class="members">
         <div class="member row">
             <div class="col-md-1"><center><img src="http://highflextech.com/website-master/pictures/alan.png" class="img-circle"></center></div>
-            <div class="col-md-9"><h3>Alan Russian</h3><p>President</p></div>
-            <div class="col-md-2"><button style="width:100%;" type="button" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Email Alan</button></div>
+            <div class="col-md-5"><h3>Alan Russian</h3><p>President</p></div>
+            <div class="col-md-2"><a href="mailto:arussian@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Alan</a></div>
         </div>
         <div class="member row">
             <div class="col-md-1"><center><img src="http://highflextech.com/website-master/pictures/alan.png" class="img-circle"></center></div>
-            <div class="col-md-9"><h3>Alan Russian</h3><p>President</p></div>
-           <div class="col-md-2"><button style="width:100%;" type="button" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Email Alan</button></div>
+            <div class="col-md-5"><h3>Alan Russian</h3><p>President</p></div>
+           <div class="col-md-2"><a href="mailto:arussian@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Alan</a></div>
         </div>
         <div class="member row">
             <div class="col-md-1"><center><img src="http://highflextech.com/website-master/pictures/alan.png" class="img-circle"></center></div>
-            <div class="col-md-9"><h3>Alan Russian</h3><p>President</p></div>
-           <div class="col-md-2"><button style="width:100%;" type="button" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Email Alan</button></div>
+            <div class="col-md-5"><h3>Alan Russian</h3><p>President</p></div>
+           <div class="col-md-2"><a href="mailto:arussian@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Alan</a></div>
         </div>
+       
     </div>
     <div class="row" style="margin-bottom: 20px; padding-bottom: 5px; border: none;">
         <div class="col-md-12">
@@ -56,36 +57,30 @@ session_start();
         <p>The members of IWU ACM!</p>
         </div>
     </div>
-    <div class="members">
+    <div class="members" style="overflow-y:scroll;">
         <div class="member row">
             <div class="col-md-1"><center><img src="http://highflextech.com/website-master/pictures/alan.png" class="img-circle"></center></div>
-            <div class="col-md-9"><h3>Alan Russian</h3><p>President</p></div>
-            <div class="col-md-2"><button style="width:100%;" type="button" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Email Alan</button></div>
+            <div class="col-md-5"><h3>Alan Russian</h3><p>President</p></div>
+            <div class="col-md-2"><a href="mailto:arussian@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Alan</a></div>
         </div>
         <div class="member row">
             <div class="col-md-1"><center><img src="http://highflextech.com/website-master/pictures/alan.png" class="img-circle"></center></div>
-            <div class="col-md-9"><h3>Alan Russian</h3><p>President</p></div>
-           <div class="col-md-2"><button style="width:100%;" type="button" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Email Alan</button></div>
+            <div class="col-md-5"><h3>Alan Russian</h3><p>President</p></div>
+            <div class="col-md-2"><a href="mailto:arussian@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Alan</a></div>
         </div>
         <div class="member row">
             <div class="col-md-1"><center><img src="http://highflextech.com/website-master/pictures/alan.png" class="img-circle"></center></div>
-            <div class="col-md-9"><h3>Alan Russian</h3><p>President</p></div>
-           <div class="col-md-2"><button style="width:100%;" type="button" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Email Alan</button></div>
+            <div class="col-md-5"><h3>Alan Russian</h3><p>President</p></div>
+            <div class="col-md-2"><a href="mailto:arussian@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Alan</a></div>
         </div>
         <div class="member row">
             <div class="col-md-1"><center><img src="http://highflextech.com/website-master/pictures/alan.png" class="img-circle"></center></div>
-            <div class="col-md-9"><h3>Alan Russian2</h3><p>President</p></div>
-           <div class="col-md-2"><button style="width:100%;" type="button" class="btn btn-default"><span class="glyphicon glyphicon-send"></span> Email Alan</button></div>
+            <div class="col-md-5"><h3>Alan Russian</h3><p>President</p></div>
+            <div class="col-md-2"><a href="mailto:arussian@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Alan</a></div>
         </div>
+      
     </div>
 </div>
-<style>
-@media screen and (min-width: 800px) {
-    .center-content {
-       width:800px;
-    }
-} 
-</style>
 <?php
   require 'template/footer.php';
 ?>
