@@ -18,15 +18,18 @@ a:hover { color: #76c0bb }
 .btn-default:hover { background: #65b8b2; border-color: #65b8b2; font-style: italic; color: #ddd; }
 
 .container { max-width: 1200px; }
-.row { border-bottom: 1px dotted #ddd; padding-bottom: 20px; margin-bottom: 30px; }
+.row { border-bottom: 1px dotted #ddd; padding-bottom: 20px; margin-bottom: 30px; margin-top:50px; }
 .row:last-child { border-bottom: none; }
 
-.members { height: auto; max-height: 210px; overflow-y: auto; overflow-x: hidden; padding-right: 20px; }
+.members .row{ margin-top:0px !important;}
+
+.members { height: auto; max-height: 210px;  overflow-x: hidden; padding-right: 20px; }
+
 .member { margin-bottom: 0; border-bottom: none; }
 .member img { width: 50px; }
 .member h3 { margin: 0; }
 .member .glyphicon { margin-right: 3px; }
-.member .btn { margin-top: 10px; }
+.member .btn { margin-top: 10px; padding:5px; text-align:center; }
 .member:last-child { padding-bottom: 0; }
 
 #fixed-bar { position: fixed; left: 0; top: 51px; bottom: 0; background: rgba(33,33,33,0.5); width: 200px; color: #fff; text-align: center; padding: 0; }
@@ -44,6 +47,22 @@ a:hover { color: #76c0bb }
 .admin .btn { margin-left: 7px; }
 
 .officers { text-align: center; }
+
+.navbar {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 9999;
+width: 100%;
+min-height: 50px;
+}
+
+@media screen and (min-width: 800px) {
+    .center-content {
+       width:810px;
+    }
+} 
+
 
 @media( max-width: 995px ) {
 	#fixed-bar { position: relative; left: 0; top: 0; background: transparent; width: 100%; text-align: left; color: #000; }
