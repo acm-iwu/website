@@ -20,6 +20,8 @@
             <p>We inspire dialogues, share resources and address the field's challenges. We strive to strengthen the profession's collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence. We support the professional growth of our members by providing opportunities for life-long learning, career development, and professional networking.</p>
         </div>
     </div>
+
+    <!--
     <div class="officers row">
         <div class="col-md-6">
             <img src="http://highflextech.com/website-master/pictures/alan.png" class="img-circle">
@@ -34,6 +36,8 @@
             <h4>jalbert@iwu.edu</h4>
         </div>
     </div>
+    -->
+    
 </div>
 
 <?php
