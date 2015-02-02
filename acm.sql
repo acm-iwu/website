@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `adminlogin` (
 --
 
 INSERT INTO `adminlogin` (`username`, `pass`) VALUES
-('admin', '123456');
+('admin', 'Illinois_Wesleyan_ACM');
 
 -- --------------------------------------------------------
 
