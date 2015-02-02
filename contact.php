@@ -103,7 +103,7 @@
     </div>
   </div>
   <div class="form-group form-group-lg">
-    <label class="col-sm-2 control-label" for="formGroupInputLarge">Email Address: </br> (username@iwu.edu)</label>
+    <label class="col-sm-2 control-label" for="formGroupInputLarge">Email Address:</label>
     <div class="col-sm-10">
       <input class="form-control" type="text" id="email" name="email" value=""  placeholder="Email">
     </div>
