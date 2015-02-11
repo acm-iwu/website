@@ -8,6 +8,7 @@ session_start();
   require 'template/header.php';
   
   ?>
+  
 <div class="container">
     <div class="row">
 
@@ -62,7 +63,7 @@ if(!isset($_GET['id'])){
 			
 			while($row = mysql_fetch_assoc($result)){
 				
-						echo  "<p> <a hre='#'>".$worker = $row['name']."</a> <p>";
+						echo  "<p> <a hre='#' style='text-decoration:none'>".$worker = $row['name']."</a> <p>";
 					 	
 					
 				}
@@ -91,7 +92,7 @@ if(!isset($_GET['id'])){
 		$result = mysql_query($query);
 	?>
 		<?php 
-	  for($i=0;$i<$r; $i++){
+	  for($i=0;$i<$result; $i++){
 					?>
 						<li data-target='#myCarousel' data-slide-to='<?php echo $i; ?>' class="<?php if($i==0){ echo "active";} ?>"></li>
 					<?php
