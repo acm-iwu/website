@@ -40,7 +40,7 @@ session_start();
             <div class="col-md-2"><a href="mailto:ttattini@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Tanner</a></div>
         </div>
         <div class="member row">
-            <div class="col-md-1"><center><img src="pictures/linhb.png" class="img-circle"></center></div>
+            <div class="col-md-1"><center><img src="pictures/linhb.jpg" class="img-circle"></center></div>
             <div class="col-md-5"><h3>Linh Bui</h3><p>Vice President</p></div>
            <div class="col-md-2"><a href="mailto:lbui@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Linh</a></div>
         </div>
