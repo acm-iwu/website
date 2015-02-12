@@ -53,7 +53,7 @@ if(!isset($_GET['id'])){
           <p style="word-break:break-all"><?php
           	echo $description;
 		  ?></p>
-          <h3>People worked on the project</h3>
+          <h3>Contributors:</h3>
          
           	<?php
             	 $query = "select * from `worker` where `id` = '$id'";
