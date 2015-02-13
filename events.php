@@ -12,7 +12,7 @@
             <p>Below are on-going IWU ACM Events.</p>
             <br />
 
-<iframe src="https://www.google.com/calendar/htmlembed?src=%23contacts%40group.v.calendar.google.com&ctz=America/Los_Angeles" style="border: 0" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://www.google.com/calendar/embed?src=acm%40iwu.edu&ctz=America/Chicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 		</div>
       </div>
