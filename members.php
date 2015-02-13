@@ -293,7 +293,7 @@ session_start();
 
 <footer class="footer">
     <div class="container">
-        <div class="copy col-md-6">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Copyright &copy; IWU ACM 2015</div>
+        <div class="copy col-md-6">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Copyright &copy; IWU ACM 2015</div>
         <div class="col-md-6" style="text-align: right">Designed by Wesleyan ACM</div>
     </div>
 </footer>
