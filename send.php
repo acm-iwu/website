@@ -5,12 +5,12 @@
 			if(!empty($_POST['user']) && !empty($_POST['email'])&& 
 		!empty($_POST['subject'])&& !empty($_POST['Message'])){
 			
-	/*		
+	
 			$user = $_POST['user'];
 			$email = $_POST['email'];
 			$subject = $_POST['subject'];
 			$mess = $_POST['Message'];
-			$to = "t.u.chaudhari@gmail.com";
+			$to = "acm@iwu.edu";
 			//$to = "ttattini@iwu.edu";
 			$subject_text = $subject;
 			$header = "From: '$user' <'$email'> ";
@@ -29,15 +29,15 @@
 				
 				}
 				
-				*/
 				
-				 
+				
+/*				 
 include('Mail.php');
 
-$recipients = 't.u.chaudhari@gmail.com';
+$recipients = 'acm@iwu.edu';
 
 $headers['From']    = $_POST['email']; // email id from where you want to send your mail.
-$headers['To']      = 'ttattini@iwu.edu';
+//$headers['To']      = 'ttattini@iwu.edu';
 $headers['Subject'] = $_POST['subject'];
 
 $body = $_POST['Message'];
@@ -54,7 +54,7 @@ $params = array('debug'=>true,'host'=>$host,'port'=>$port,'auth'=>true,'username
 $mail = Mail::factory('smtp', $params);
 $mail->send($recipients,$headers,$body);
 
-				
+	*/			
 			 	
 		    	}
 			
