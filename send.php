@@ -5,13 +5,13 @@
 			if(!empty($_POST['user']) && !empty($_POST['email'])&& 
 		!empty($_POST['subject'])&& !empty($_POST['Message'])){
 			
-			
+	/*		
 			$user = $_POST['user'];
 			$email = $_POST['email'];
 			$subject = $_POST['subject'];
 			$mess = $_POST['Message'];
-			//$to = "t.u.chaudhari@gmail.com";
-			$to = "ttattini@iwu.edu";
+			$to = "t.u.chaudhari@gmail.com";
+			//$to = "ttattini@iwu.edu";
 			$subject_text = $subject;
 			$header = "From: '$user' <'$email'> ";
 			$body = $mess;
@@ -28,6 +28,36 @@
 				
 				
 				}
+				
+				*/
+				
+				 
+include('Mail.php');
+
+$recipients = 't.u.chaudhari@gmail.com';
+
+$headers['From']    = $_POST['email']; // email id from where you want to send your mail.
+$headers['To']      = 'ttattini@iwu.edu';
+$headers['Subject'] = $_POST['subject'];
+
+$body = $_POST['Message'];
+
+$params['sendmail_path'] = '/usr/lib/sendmail';
+
+$host="localhost"; //servername
+$username="root"; // userbame
+$password=""; // password
+
+$mail->SMTPAuth   = true;
+$mail->SMTPSecure = "tls";
+$params = array('debug'=>true,'host'=>$host,'port'=>$port,'auth'=>true,'username'=>$username,'password'=>$password);
+$mail = Mail::factory('smtp', $params);
+$mail->send($recipients,$headers,$body);
+
+				
+			 	
+		    	}
+			
 			}
-		
-	?>
+		?>
+	
