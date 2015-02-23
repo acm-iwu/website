@@ -57,7 +57,5 @@ $mail->send($recipients,$headers,$body);
 	*/			
 			 	
 		    	}
-			
-			}
 		?>
 	
