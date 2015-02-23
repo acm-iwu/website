@@ -79,11 +79,6 @@ session_start();
             <div class="col-md-2"><a href="mailto:asmith8@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Amelia</a></div>
         </div>
         <div class="member row">
-            <div class="col-md-1"><center><img src="pictures/an.jpg" class="img-circle"></center></div>
-            <div class="col-md-5"><h3>An Nguyen</h3><p>Member</p></div>
-            <div class="col-md-2"><a href="mailto:anguyen@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email An</a></div>
-        </div>
-        <div class="member row">
             <div class="col-md-1"><center><img src="pictures/andrew.jpg" class="img-circle"></center></div>
             <div class="col-md-5"><h3>Andrew Posadzy</h3><p>Member</p></div>
             <div class="col-md-2"><a href="mailto:aposadzy@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Andrew</a></div>
