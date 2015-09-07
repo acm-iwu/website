@@ -37,7 +37,7 @@ session_start();
         <div class="member row">
             <div class="col-md-1"><center><img src="pictures/minh.jpg" class="img-circle"></center></div>
             <div class="col-md-5"><h3>Minh Nguyen </h3><p>President</p></div>
-            <div class="col-md-2"><a href="mailto:mnguyen3@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Tanner</a></div>
+            <div class="col-md-2"><a href="mailto:mnguyen3@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Minh</a></div>
         </div>
         <div class="member row">
             <div class="col-md-1"><center><img src="pictures/linhb.jpg" class="img-circle"></center></div>
@@ -45,9 +45,9 @@ session_start();
            <div class="col-md-2"><a href="mailto:lbui@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Linh</a></div>
         </div>
         <div class="member row">
-            <div class="col-md-1"><center><img src="pictures/minh.jpg" class="img-circle"></center></div>
-            <div class="col-md-5"><h3>Minh Nguyen</h3><p>Treasurer</p></div>
-           <div class="col-md-2"><a href="mailto:mnguyen3@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Minh</a></div>
+            <div class="col-md-1"><center><img src="pictures/tanner.jpg" class="img-circle"></center></div>
+            <div class="col-md-5"><h3>Tanner Tahiti</h3><p>Treasurer</p></div>
+           <div class="col-md-2"><a href="mailto:ttahiti@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Tanner</a></div>
         </div>
        
     </div>
