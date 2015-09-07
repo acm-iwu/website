@@ -6,7 +6,7 @@ session_start();
 
   require 'template/header.php';
   
-  ?>
+?>
    
   <div id="fixed-bar" class="container">
     <div class="col-md-12">
@@ -303,6 +303,4 @@ session_start();
     <script>
     $('.dropdown-toggle').dropdownHover(options);
     </script>
-    </div>
-  </body>
-</html>
+
