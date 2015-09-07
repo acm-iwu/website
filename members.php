@@ -6,9 +6,9 @@ session_start();
 
   require 'template/header.php';
   
-  ?>
+?>
    
-  <div id="fixed-bar" class="container">
+<div id="fixed-bar" class="container">
     <div class="col-md-12">
     <h2>President Emertrius</h2>
     <h4>Past Officers</h4>
@@ -35,7 +35,7 @@ session_start();
     </div>
     <div class="members">
         <div class="member row">
-            <div class="col-md-1"><center><img src="pictures/tanner.jpg" class="img-circle"></center></div>
+            <div class="col-md-1"><center><img src="pictures/tanner.jpg" class="img-circle"></center> </div>
             <div class="col-md-5"><h3>Minh Nguyen </h3><p>President</p></div>
             <div class="col-md-2"><a href="mailto:mnguyen3@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Minh</a></div>
         </div>
@@ -50,8 +50,6 @@ session_start();
         <h1>Members</h1>
         <p>The members of IWU ACM!</p>
         </div>
-    </div>
-   
     </div>
 </div>
 
