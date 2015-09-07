@@ -2,10 +2,10 @@
 
   require_once 'common/pages.php';
 	
-  if (!isset($page)) {
-    throw new RuntimeException('You must set the page before including the header.');
-  }
-  require("db.php");
+  //if (!isset($page)) {
+    //throw new RuntimeException('You must set the page before including the header.');
+  //}
+  //require("db.php");
  
 ?>
 
