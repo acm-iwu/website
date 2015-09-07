@@ -2,7 +2,7 @@
 session_start();
   //require_once 'common/pages.php';
 
-  $page = PAGE_PROJECTS;
+  //$page = PAGE_PROJECTS;
 
   require 'template/header.php';
   
@@ -278,18 +278,14 @@ session_start();
             <div class="col-md-5"><h3>Zhenghao Ding</h3><p>Member</p></div>
             <div class="col-md-2"><a href="mailto:zding@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Zhenghao</a></div>
         </div>
-      
-
-
-
-      
+         
     </div>
 </div>
 
 <footer class="footer">
     <div class="container">
         <div class="copy col-md-6">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Copyright &copy; IWU ACM 2015</div>
-        <div class="col-md-6" style="text-align: right">Designed by Wesleyan ACM</div>
+        <div class="col-md-6" style="text-align: right">Designed by Illinois Wesleyan ACM</div>
     </div>
 </footer>
     
