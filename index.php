@@ -1,7 +1,7 @@
 <?php session_start();
-  //require_once 'common/pages.php';
+  require_once 'common/pages.php';
 
-  //$page = PAGE_HOME;
+  $page = PAGE_HOME;
 
   require 'template/header.php';
 ?>
