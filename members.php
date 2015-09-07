@@ -58,11 +58,7 @@ session_start();
         </div>
     </div>
     <div class="members" style="overflow-y:scroll;">
-        <div class="member row">
-            <div class="col-md-1"><center><img src="pictures/adam.jpg" class="img-circle"></center></div>
-            <div class="col-md-5"><h3>Adam Varilla</h3><p>Member</p></div>
-            <div class="col-md-2"><a href="mailto:avarilla@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Adam</a></div>
-        </div>
+        
         <div class="member row">
             <div class="col-md-1"><center><img src="pictures/alan.png" class="img-circle"></center></div>
             <div class="col-md-5"><h3>Alan Russian</h3><p>Member</p></div>
@@ -73,11 +69,7 @@ session_start();
             <div class="col-md-5"><h3>Alex Huang</h3><p>Member</p></div>
             <div class="col-md-2"><a href="mailto:chuang1@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Alex</a></div>
         </div>
-        <div class="member row">
-            <div class="col-md-1"><center><img src="pictures/amelia.jpeg" class="img-circle"></center></div>
-            <div class="col-md-5"><h3>Amelia Smith</h3><p>Member</p></div>
-            <div class="col-md-2"><a href="mailto:asmith8@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Amelia</a></div>
-        </div>
+        
         <div class="member row">
             <div class="col-md-1"><center><img src="pictures/andrew.jpg" class="img-circle"></center></div>
             <div class="col-md-5"><h3>Andrew Posadzy</h3><p>Member</p></div>
