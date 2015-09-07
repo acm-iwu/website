@@ -35,7 +35,7 @@ session_start();
     </div>
     <div class="members">
         <div class="member row">
-            <div class="col-md-1"><center><img src="pictures/tanner.jpg" class="img-circle"></center> </div>
+            <div class="col-md-1"><center><img src="pictures/minh.jpg" class="img-circle"></center> </div>
             <div class="col-md-5"><h3>Minh Nguyen </h3><p>President</p></div>
             <div class="col-md-2"><a href="mailto:mnguyen3@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Minh</a></div>
         </div>
@@ -45,12 +45,7 @@ session_start();
            <div class="col-md-2"><a href="mailto:lbui@iwu.edu" class="btn btn-default"> <span class="glyphicon glyphicon-send"></span> Email Ania</a></div>
         </div>
     </div>
-    <div class="row" style="margin-bottom: 20px; padding-bottom: 5px; border: none;">
-        <div class="col-md-12">
-        <h1>Members</h1>
-        <p>The members of IWU ACM!</p>
-        </div>
-    </div>
+
 </div>
 
 <footer class="footer">
