@@ -2,7 +2,7 @@
 session_start();
   //require_once 'common/pages.php';
 
-  //$page = PAGE_PROJECTS;
+  $page = PAGE_PROJECTS;
 
   require 'template/header.php';
   
