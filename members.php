@@ -13,13 +13,13 @@ session_start();
     <h2>President Emertrius</h2>
     <h4>Past Officers</h4>
     <div class="members">
-        <center><img style="width: 60px; height: 60px;" src="pictures/unknown.png"></center>
-        <h5>Unknown</h5>
+        <center><img style="width: 60px; height: 60px;" src="pictures/alan.png"></center>
+        <h5>Alan Russia</h5>
     </div>
     <div class="members">
     <span style="margin-bottom: 15px; color: #444" class="glyphicon glyphicon-arrow-down"></span>
-        <center><img style="width: 60px; height: 60px;" src="http://highflextech.com/website-master/pictures/alan.png"></center>
-        <h5>Alan Russian</h5>
+        <center><img style="width: 60px; height: 60px;" src="pictures/tanner.jpg"></center>
+        <h5>Tanner Tattini</h5>
     </div>
     </div>
 </div>
