@@ -1,5 +1,5 @@
 <?php session_start();
-  require_once ('/home/acm/public_html/website/common/config.php');
+  require_once ('/home/acm/public_html/website/config.php');
 
   $page = PAGE_HOME;
 

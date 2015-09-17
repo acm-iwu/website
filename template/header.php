@@ -1,6 +1,6 @@
 <?php
 
-  require_once ('/home/acm/public_html/website/template/config.php');
+  require_once ('/home/acm/public_html/website/config.php');
 	
   if (!isset($page)) {
     throw new RuntimeException('You must set the page before including the header.');
