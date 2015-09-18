@@ -28,3 +28,5 @@
 
     return 'IWU ACM | ' . $titles[$page];
   }
+
+?>
