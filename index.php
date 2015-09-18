@@ -1,9 +1,9 @@
 <?php session_start();
-  require ('config.php');
+  require 'config.php';
 
   $page = PAGE_HOME;
 
-  require 'template/header.php';
+  require_once 'template/header.php';
 ?>
 
 <div class="container">
