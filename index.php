@@ -1,5 +1,5 @@
 <?php session_start();
-  require 'common/db.php';
+  require 'config.php';
 
   $page = PAGE_HOME;
 
