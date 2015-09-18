@@ -4,7 +4,7 @@ session_start();
 
   $page = PAGE_PROJECTS;
 
-  require 'template/header.php';
+  require_once 'template/header.php';
   
 ?>
    
