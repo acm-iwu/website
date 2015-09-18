@@ -5,7 +5,7 @@
   if (!isset($page)) {
     throw new RuntimeException('You must set the page before including the header.');
   }
-  require_once 'common/db.php';
+  //require_once 'common/db.php';
  
 ?>
 
