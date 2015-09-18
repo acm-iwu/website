@@ -1,5 +1,6 @@
 <?php session_start();
   require 'config.php';
+  require_once 'common/pages.php';
 
   $page = PAGE_HOME;
 
