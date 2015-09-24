@@ -10,8 +10,8 @@
 <div class="container">
     <div class="about row">
         <div class="col-md-6">
-            <h1>Description</h1>
-            <p>Hi, We are the Association of Computing Machinery's chapter of Illinois Wesleyan University. We carry out our missions through conferences, publications, educational program, public awareness activities, and special interest groups.</p>
+            <h1>Chao Xu,</h1>
+            <p>anhnhoxu:p.</p>
             <p>ACM unites the world's computing educators, researchers and professionals to inspire dialogue, share resources and address the field's challenges. ACM strengthens the profession's collective voice through strong leadership, promotion of the highest standards, and recognition of technical excellence.</p>
             <p>We support the professional growth of our members by providing opportunities for life-long learning, career development, and professional networking.</p>
         </div>
