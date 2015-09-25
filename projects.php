@@ -15,7 +15,7 @@ session_start();
 
 <?php
 
-require("db.php");
+require_once 'config.php';
 if(!isset($_GET['id'])){
 	 die();
 	  }else{
